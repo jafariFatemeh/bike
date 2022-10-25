@@ -1,6 +1,5 @@
 package com.globomatics.bike.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,7 @@ public class BikesController {
 
     @GetMapping("/{id}")
     public Bike get(@PathVariable("id") long id) {
-            return bikeRepository.getOne(id);
+            return bikeRepository.getReferenceById(id);
     }
     
 
