@@ -34,7 +34,7 @@ public class BikesController {
 
     @GetMapping("/{id}")
     public Bike get(@PathVariable("id") long id) {
-            return bikeRepository.getReferenceById(id);
+            return bikeRepository.getOne(id);
     }
     
 
