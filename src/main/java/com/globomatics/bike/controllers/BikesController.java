@@ -17,7 +17,6 @@ import com.globomatics.bike.repositories.BikeRepository;
 
 @RestController
 @RequestMapping("/api/v1/bikes")
-
 public class BikesController {
     @Autowired
     private BikeRepository bikeRepository;
