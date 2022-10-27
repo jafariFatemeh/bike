@@ -71,9 +71,10 @@ public class Bike {
     public Date getPurhaseDate() {
         return purhaseDate;
     }
-    public void setPurhaseDate(Date purhaseDate) {
-        this.purhaseDate = purhaseDate;
+    public void setPDate(Date pDate) {
+        this.pDate = pDate;
     }
+    
     public BigDecimal getPurchasePrice() {
         return purchasePrice;
     }
