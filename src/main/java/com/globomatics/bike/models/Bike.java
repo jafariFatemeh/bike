@@ -3,18 +3,28 @@ package com.globomatics.bike.models;
 import java.math.BigDecimal;
 import java.sql.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 
-
+@Entity
 
 public class Bike {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private boolean contact;
     private String email;
     private String model;
     private String name;
     private String phone;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
     private Date purhaseDate;
     private BigDecimal purchasePrice;
     private String serialNumber;
