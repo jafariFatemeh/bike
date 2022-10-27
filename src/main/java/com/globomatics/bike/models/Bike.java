@@ -26,7 +26,7 @@ public class Bike {
     private String phone;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
-    private Date purhaseDate;
+    private Date pdate;
     private BigDecimal purchasePrice;
     private String serialNumber;
 
@@ -67,14 +67,13 @@ public class Bike {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    
-    public Date getPurhaseDate() {
-        return purhaseDate;
+    public Date getPdate() {
+        return pdate;
     }
-    public void setPDate(Date pDate) {
-        this.pDate = pDate;
+    public void setPdate(Date pdate) {
+        this.pdate = pdate;
     }
-    
+
     public BigDecimal getPurchasePrice() {
         return purchasePrice;
     }
